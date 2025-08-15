@@ -58,7 +58,24 @@
   <footer>
     <p>&copy; 2025 Tech 2000 Plumbing & Heating. All rights reserved.</p>
   </footer>
+<script>
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', () => {
+      // Change the URL here to where you want each card to go
+      if (card.querySelector('h3').innerText.includes('Leak')) {
+        window.location.href = 'leak-repair.html';
+      } else if (card.querySelector('h3').innerText.includes('Drain')) {
+        window.location.href = 'drain-cleaning.html';
+      } else if (card.querySelector('h3').innerText.includes('Fixture')) {
+        window.location.href = 'fixture-installation.html';
+      } else if (card.querySelector('h3').innerText.includes('Emergency')) {
+        window.location.href = 'emergency-services.html';
+      }
+    });
+  });
+</script>
 </body>
 </html>
+
 
 
