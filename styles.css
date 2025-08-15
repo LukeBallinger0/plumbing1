@@ -105,3 +105,12 @@ footer {
   bottom: 0;
   width: 100%;
 }
+.contact-info a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
